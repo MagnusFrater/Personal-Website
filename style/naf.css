@@ -1,0 +1,211 @@
+/* ########################
+            MAIN
+##########################*/
+body {
+	background: rgb(220,220,220);
+
+	font-size: 100%;
+	text-align: center;
+    color: black;
+}
+
+/* ########################
+		MODAL/POPUP
+##########################*/
+
+ /* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Body */
+.modal-body { 
+    padding: 2px 16px; 
+}
+
+/* Modal Footer */
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Modal Content */
+.modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: auto;
+    padding: 0;
+    border: 1px solid #888;
+    width: 80%;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2),0 6px 20px 0 rgba(0,0,0,0.19);
+    -webkit-animation-name: animatetop;
+    -webkit-animation-duration: 0.4s;
+    animation-name: animatetop;
+    animation-duration: 0.4s
+}
+
+.modal-header h1 {
+    text-decoration: underline;
+}
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+@keyframes animatetop {
+    from {top: -300px; opacity: 0}
+    to {top: 0; opacity: 1}
+}
+
+/* ########################
+            Header
+###########################*/
+header {
+    padding: 0px;
+    border: 0px;
+    background-color: #5cb85c;
+    border: 1px solid black;
+}
+
+#NAF-header {
+    text-decoration: bold;
+    padding: 0px;
+    margin: 0px;
+    margin-top: 10px;
+}
+
+#NAF-p {
+    padding: 0px;
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+#NAF-header:hover {
+    text-decoration: underline;
+}
+
+/* ########################
+            APOD
+###########################*/
+#APOD-header {
+    text-decoration: bold;
+}
+
+#APOD-header:hover {
+    text-decoration: underline;
+}
+
+#APOD-hdurl {
+    width: 80%;
+    border: 1px solid black;
+}
+
+#APOD-hdurl:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+/* ######################
+        Mars Trek
+#########################*/
+#middle {
+    padding: 0px;
+    margin: 0px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* ######################
+        Mars Trek
+#########################*/
+#MarsTrek-header {
+    text-decoration: bold;
+}
+
+#MarsTrek-header:hover {
+    text-decoration: underline;
+}
+
+#RoverMapsFrame,
+#MarsMapsFrame {
+    border: 1px solid black;
+}
+
+#RoverMapsFrame:hover,
+#MarsMapsFrame:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+}
+
+#RoverButtons, #MarsButtons {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#Mars-img {
+    width: 200px;
+}
+
+#RoverInfo:hover,
+#MarsInfo:hover {
+    text-decoration: underline;
+}
+
+/* ########################
+            Footer
+###########################*/
+footer {
+    margin: 0px;
+    margin-top: 20px;
+    padding: 0px;
+    background-color: #5cb85c;
+    border: 1px solid black;
+}
+
+#footer-middle {
+    margin: 0px;
+    padding: 50;
+}
+
+#mHacksLogo-footer {
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    padding: 0px;
+    border: 1px solid black;
+}
+
+#footer-author {
+    padding: 0px;
+    margin: 0px;
+}
+
+#footer-location {
+    padding: 0px;
+    margin-bottom: 0px;
+}
+
+#footer-a {
+    padding: 0px;
+    padding-bottom: 20px;
+    margin: 0px;
+}

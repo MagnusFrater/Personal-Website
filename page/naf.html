@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="description" content="NASA API Presentation Page">
+		<meta name="keywords" content="magnus, frater, magnusfrater, personal, website, todd, griffin">
+		<meta name="author" content="Todd Griffin">
+
+		<title>[v]: NASA API Folio</title>
+
+		<link rel="stylesheet" type="text/css" href="/style/naf.css">
+	</head>
+
+	<body>
+
+		<header>
+			<h1 id="NAF-header" onclick="showModal('NAF-modal')">NASA API Folio (NAF)</h1>
+			<p id="NAF-p">Click on items to learn more about them!</p>
+
+			<div id="NAF-modal" class="modal" onclick="hideModal('NAF-modal')">
+				<div class="modal-content">
+
+					<div id="NAF-modal-header" class="modal-header">
+						<h1>NASA API Folio (NAF)</h1>
+					</div>
+
+					<div class="modal-body">
+						<h2><a href="https://api.nasa.gov/index.html" target="_blank">{NASA Open APIs}</a></h2>
+						<h2><a href="https://api.nasa.gov/api.html#authentication" target="_blank">API Demo/Example Page</a></h2>
+					</div>
+
+					<div id="NAF-modal-footer" class="modal-footer">
+
+					</div>
+
+				</div>
+			</div>
+		</header>
+
+		<main>
+			<h2 id="APOD-header" onclick="showModal('APOD-modal')">Astronomy Picture of the Day (APOD)</h2>
+
+			<div id="APOD-main" onclick="showModal('APOD-modal')">
+				<img id="APOD-hdurl"/>
+			</div>
+
+			<div id="APOD-modal" class="modal" onclick="hideModal('APOD-modal')">
+				<div class="modal-content">
+
+					<div id="APOD-modal-header" class="modal-header">
+						<h1>Astronomy Picture of the Day (APOD)</h2>
+						<h2 id="APOD-title"></h2>
+					</div>
+
+					<div class="modal-body">
+						<h3 id="APOD-copyright-date"></h3>
+						<img id="APOD-url"/>
+						<p id="APOD-explanation"></p>
+					</div>
+
+					<div id="APOD-modal-footer" class="modal-footer">
+
+					</div>
+
+				</div>
+			</div>
+
+			<hr id="middle">
+
+			<h2 id="MarsTrek-header" onclick="showModal('MarsTrek-modal')">Mars Trek: WMTS Layer Services</h2>
+
+			<div id="MarsTrek-modal" class="modal" onclick="hideModal('MarsTrek-modal')">
+				<div class="modal-content">
+
+					<div id="MarsTrek-header" class="modal-header">
+						<h1>Mars Trek: WMTS Layer Services</h1>
+					</div>
+
+					<div class="modal-body">
+						<h3><a href="https://api.nasa.gov/mars-wmts/catalog/" target="_blank">Mars Trek Endpoint Catalog</a></h3>
+
+						<h3><a href="http://www.esri.com/" target="_blank">esri</a> , <a href="https://www.arcgis.com/home/index.html" target="_blank">ArcGIS</a></h3>
+
+						<h3><a href="https://magnusfrater.maps.arcgis.com/home/content.html" target="_blank">My maps.arcgis.com Contents page</a></h3>
+					</div>
+
+					<div id="MarsTrek-modal-footer" class="modal-footer">
+
+					</div>
+
+				</div>
+			</div>
+
+			<h3 id="RoverInfo" onclick="showModal('MarsRover-modal')">Curiosity Landing Site</h3>
+
+			<div id="RoverMaps">
+				<iframe src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=0a915d4d64a545e7917a78e6c84c94c2&amp;extent=136.3397,-6.0286,139.2126,-4.5509&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=ligh" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="CTX Mosaic - Curiosity Landing Site" width="500" height="500" id="RoverMapsFrame"></iframe>
+			</div>
+
+			<div id="RoverButtons">
+				<button data-roverId=1 data-src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=0a915d4d64a545e7917a78e6c84c94c2&amp;extent=136.3397,-6.0286,139.2126,-4.5509&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=ligh" data-id="bCLS">Curiosity Landing Site</button>
+				<button data-roverId=2 data-src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=0a915d4d64a545e7917a78e6c84c94c2&amp;extent=137.061,-4.7799,137.7792,-4.4105&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=light" data-id="bSLS">Spirit Landing Site</button>
+				<button data-roverId=3 data-src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=365acd87c0ba4036b02c08f85da089ec&amp;extent=-5.6659,-2.5209,-4.9476,-2.1515&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=light" data-id="bOLS">Opportunity Landing Site</button>
+			</div>
+
+			<div id="MarsRover-modal" class="modal" onclick="hideModal('MarsRover-modal')">
+				<div class="modal-content">
+
+					<div id="MarsRover-header" class="modal-header">
+						<h1 id="MarsRover-title">Curiosity Landing Site</h1>
+					</div>
+
+					<div class="modal-body">
+						<img id="MarsRover-img" src="/resource/naf/CuriosityRover.jpg" />
+						<p id="MarsRover-p">Curiosity is a car-sized robotic rover exploring Gale Crater on Mars as part of NASA\'s Mars Science Laboratory mission (MSL).[3] As of October 8, 2016, Curiosity has been on Mars for 1484 sols (1524 total days) since landing on August 6, 2012. The rover\'s goals include: investigation of the Martian climate and geology; assessment of whether the selected field site inside Gale Crater has ever offered environmental conditions favorable for microbial life, including investigation of the role of water; and planetary habitability studies in preparation for future human exploration.</p>
+						<p> <a id="MarsRover-citation" href="https://en.wikipedia.org/wiki/Curiosity_(rover)" target="_blank">Click here to learn more!</a> </p>
+					</div>
+
+					<div id="MarsRover-footer" class="modal-footer">
+
+					</div>
+
+				</div>
+			</div>
+
+			<h3 id="MarsInfo" onclick="showModal('Mars-modal')">Mars Color</h3>
+
+			<div id="MarsMaps">
+				<iframe src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=e6c78d53b8a347a68cffa4509f786bf5&amp;extent=-180,-90,180,90&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=light" width="500" height="500" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" title="Viking Mosaic" id="MarsMapsFrame"></iframe>
+			</div>
+
+			<div id="MarsButtons">
+				<button data-marsId=1 data-src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=e6c78d53b8a347a68cffa4509f786bf5&amp;extent=-180,-90,180,90&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=light" data-id="bMarsColor">Mars Color</button>
+				<button data-marsId=2 data-src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=871bba7aea3a46b5ae1a69972cb60288&amp;extent=-180,-90,180,90&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=light" data-id="bMarsGray">Mars Grayscale</button>
+				<button data-marsId=3 data-src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=69492c55c6184a28b986f9fe172ea8a1&amp;extent=4.4958,-1.4497,10.2416,1.5056&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=light" data-id="bMarsEast">Mars East</button>
+				<button data-marsId=4 data-src="//magnusfrater.maps.arcgis.com/apps/Embed/index.html?webmap=5eeaa33d13f046edaf9c5da7d0296351&amp;extent=-22.6678,6.9493,0.3155,18.7706&amp;home=true&amp;zoom=true&amp;scale=true&amp;disable_scroll=true&amp;theme=light" data-id="bMC11">MC11</button>
+			</div>
+
+			<div id="Mars-modal" data-id="Mars-modal" class="modal" onclick="hideModal('Mars-modal')">
+				<div class="modal-content">
+
+					<div id="Mars-header" class="modal-header">
+						<h1 id="Mars-title">Mars</h1>
+					</div>
+
+					<div class="modal-body">
+						<img id="Mars-img" src="/resource/naf/mars-planet-animation.gif" />
+						<p id="Mars-p">Mars is the fourth planet from the Sun and the second-smallest planet in the Solar System, after Mercury. Named after the Roman god of war, it is often referred to as the "Red Planet"[13][14] because the iron oxide prevalent on its surface gives it a reddish appearance.[15] Mars is a terrestrial planet with a thin atmosphere, having surface features reminiscent both of the impact craters of the Moon and the valleys, deserts, and polar ice caps of Earth.</p>
+						<p>Mars is the focus of much scientific study about possible human colonization. Its surface conditions and the presence of water on Mars make it arguably the most hospitable of the planets in the Solar System, other than Earth. Mars requires less energy per unit mass (delta-v) to reach from Earth than any planet except Venus.</p>
+						<p>One of Elon Musk's stated goals through his company SpaceX is to make such colonization possible by providing transportation, and to "help humanity establish a permanent, self-sustaining colony on [Mars] within the next 50 to 100 years".</p>
+						<p> <a id="Mars-citation-1" href="https://en.wikipedia.org/wiki/Mars" target="_blank">Click here to learn more!</a> </p>
+						<p> <a id="Mars-citation-2" href="https://en.wikipedia.org/wiki/Colonization_of_Mars" target="_blank">Also, here!</a> </p>
+
+					</div>
+
+					<div id="Mars-footer" class="modal-footer">
+
+					</div>
+
+				</div>
+			</div>
+		</main>
+
+		<footer>
+			<div id="footer-middle">
+				<a href="https://mhacks.org/" target="_blank"><img id="mHacksLogo-footer" src="/resource/naf/mHacks8Logo.jpg"/></a>
+				<h3 id="footer-author">Author: Todd Griffin</h3>
+				<h4 id="footer-location">This webpage was made entirely at mHacks 8 in Detroit, MI - 2016.</h4>
+				<a id="footer-a" href="http://devpost.com/software/nasa-api-folio-naf" target="_blank">Link to mHAcks 8 DevPost</a>
+			</div>
+		</footer>
+
+		<script type="text/javascript" src="/script/jquery-3.1.1-U.js"></script>
+		<script type="text/javascript" src="/script/Vibrant.js"></script>
+		<script type="text/javascript" src="/script/naf.js"></script>
+
+	</body>
+</html>
